@@ -3,6 +3,7 @@ Hepsi Farklı Hikayedir.
 
 Kurulum:
 git clone https://github.com/MedusaMarka/Hikaye-Oyunu.git
+
 python3 <python dosyalarından biri>.py
 
 Örnek:
