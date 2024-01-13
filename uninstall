@@ -10,4 +10,3 @@ DIR_PATH=$(dirname "$(realpath "$0")")
     # Bulunduğu dizini sil
     rm -rf "$DIR_PATH"
     echo "Dizin silindi."
-fi
