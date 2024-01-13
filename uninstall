@@ -4,7 +4,7 @@
 DIR_PATH=$(dirname "$(realpath "$0")")
 
 
-then
+
     # Script dosyasını sil
     rm -- "$0"
     # Bulunduğu dizini sil
