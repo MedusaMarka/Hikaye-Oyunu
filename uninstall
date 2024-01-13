@@ -3,13 +3,7 @@
 # Bulunduğu dizinin tam yolunu al
 DIR_PATH=$(dirname "$(realpath "$0")")
 
-# Uyarı mesajı ve kullanıcı onayı
-echo "Uyarı: Bu script bulunduğu dizini silecek ve kendini imha edecektir."
-echo "Silinecek dizin: $DIR_PATH"
-read -p "Devam etmek istiyor musunuz? (y/n) " -n 1 -r
-echo    # Yeni satır için
 
-if [[ $REPLY =~ ^[Yy]$ ]]
 then
     # Script dosyasını sil
     rm -- "$0"
