@@ -1,5 +1,5 @@
 Python İle Hikaye Oyunu.
-Hepsi Farklı Hikayedir.
+Hepsi Farklı Koddur.
 
 Kurulum:
 git clone https://github.com/MedusaMarka/Hikaye-Oyunu.git
