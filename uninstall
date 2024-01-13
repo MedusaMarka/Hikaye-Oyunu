@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Mevcut script'in tam yolunu al
+SCRIPT_PATH="$(realpath "$0")"
+
+# Script dosyasını sil
+rm -f "$SCRIPT_PATH"
+
+# İşlem tamamlandı mesajı
+echo "Script silindi."
