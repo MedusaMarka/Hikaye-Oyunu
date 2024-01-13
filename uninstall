@@ -1,10 +1,19 @@
 #!/bin/bash
 
-# Mevcut script'in tam yolunu al
-SCRIPT_PATH="$(realpath "$0")"
+# Bulunduğu dizinin tam yolunu al
+DIR_PATH=$(dirname "$(realpath "$0")")
 
-# Script dosyasını sil
-rm -f "$SCRIPT_PATH"
+# Uyarı mesajı ve kullanıcı onayı
+echo "Uyarı: Bu script bulunduğu dizini silecek ve kendini imha edecektir."
+echo "Silinecek dizin: $DIR_PATH"
+read -p "Devam etmek istiyor musunuz? (y/n) " -n 1 -r
+echo    # Yeni satır için
 
-# İşlem tamamlandı mesajı
-echo "Script silindi."
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    # Script dosyasını sil
+    rm -- "$0"
+    # Bulunduğu dizini sil
+    rm -rf "$DIR_PATH"
+    echo "Dizin silindi."
+fi
